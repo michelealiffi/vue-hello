@@ -2,12 +2,19 @@
 
 const { createApp } = Vue
 
-const config = {
+createApp({
     data() {
         return {
-            titolo: "Hello World",
+            title: 'Hello Vue!',
+            picsum: `https://picsum.photos/200/300`
         }
-    }
-}
+    },
+    
+    methods: {
 
-createApp(config).mount('#app')
+    },
+
+    mounted(){
+    }
+
+}).mount('#app')
